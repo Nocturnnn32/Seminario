@@ -4,7 +4,8 @@
     Semi reg = (Semi) request.getAttribute("miobjper");
 %>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%@page contentType="text/html; charset=UTF-8"%>
 
 
 <!DOCTYPE html>

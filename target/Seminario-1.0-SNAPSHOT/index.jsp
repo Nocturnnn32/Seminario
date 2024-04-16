@@ -8,7 +8,8 @@
     ArrayList<Semi> lista = (ArrayList<Semi>) session.getAttribute("listaper");
 %>
 <%@ page import="java.text.SimpleDateFormat" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%@page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html long="es">
     <head>
