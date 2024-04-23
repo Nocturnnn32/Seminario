@@ -78,19 +78,27 @@ input[type="checkbox"] {
 }
 
 /* Estilos de Turno */
-#turno {
-  display: inline; /* Asegura un diseño horizontal */
+.turno input[type="number"],
+.turno input[type="text"],
+.turno input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-#turno label {
-  display: inline;
-  margin-right: 20px; /* Añade espacio entre los botones de radio */
+/* Estilos para los labels */
+.turno label {
+  font-weight: bold;
 }
 
-#turno input[type="radio"] {
-  vertical-align: middle;
-  display: inline; /* Asegura un diseño horizontal */
-  margin-right: 1px; /* Añade espacio entre los botones de radio */
+/* Estilos para los radios y checkboxes */
+.turno input[type="radio"],
+.turno input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 /* Estilos del botón */

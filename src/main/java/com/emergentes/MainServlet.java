@@ -92,7 +92,11 @@ public class MainServlet extends HttpServlet {
 
         objper.setNombre(request.getParameter("nombre"));
         objper.setApellidos(request.getParameter("apellidos"));
-        objper.setTurno(request.getParameter("turno"));
+        //objper.setTurno(request.getParameter("turno"));
+        String turno = request.getParameter("turno");
+        System.out.println("Valor del turno: " + turno);
+        objper.setTurno(turno);
+
         String[] seminariosSeleccionados = request.getParameterValues("seminarios[]");
         String seminariosConcatenados = String.join(",", seminariosSeleccionados);
         objper.setSeminarios(seminariosConcatenados);

@@ -1,11 +1,11 @@
+
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="com.emergentes.Semi"%>
 <%
     Semi reg = (Semi) request.getAttribute("miobjper");
 %>
 
-
-<%@page contentType="text/html; charset=UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
             <p>Carnet: 7092342 L.P</p>
         </div>
         <h1>Registro de Seminarios</h1>
-        <form action="MainServlet" method="post">
+        <form action="MainServlet" method="post" accept-charset="UTF-8">
             <section class="datos">
                 <h2>Tus datos</h2>
                 <label for="id">ID:</label>
@@ -37,9 +37,9 @@
                 <input type="text" name="apellidos" value="<%= reg.getApellidos()%>" required>
 
                 <label for="turno">Turno:</label>
-                <div id="turno">
+                <div  style="display: flex; justify-content: center;">
                     <label>
-                        <input type="radio" name="turno" value="Ma&ntilde;ana" required> Ma&ntilde;ana
+                        <input type="radio" name="turno" value="Mañana"  required> Mañana
                     </label><br>
                     <label>
                         <input type="radio" name="turno" value="Tarde"> Tarde
@@ -48,6 +48,7 @@
                         <input type="radio" name="turno" value="Noche"> Noche
                     </label><br>
                 </div>
+                
 
             </section>
             <section class="seminarios">
